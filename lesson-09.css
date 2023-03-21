@@ -1,0 +1,151 @@
+
+/* Font Designed by Christian Robertson */
+@font-face {
+    font-family: myFirstFont;
+    src: url(RobotoCondensed-Regular.ttf);
+  }
+
+/* Styling for hamburger menu*/
+.show-menu ul{display:table; width:5px;}
+.show-menu ul li{ height:2px; background-color:black; margin-bottom:4px;}
+
+input[type=checkbox], label{display:none;}
+
+@media (max-width: 950px) {
+input[type=checkbox] 
+input[type=checkbox]{background:none;}
+
+label {display:inline-block;}
+label {float:right;}
+
+/* This line of code hides the links until the checkbox/hamburger is clicked, which then displays links in a block */
+input[type=checkbox]:checked ~ nav {display:block;}
+
+nav { display:none; 
+     background-color:lightblue;  
+    }
+
+nav ul {width:auto;}
+
+nav ul li {width:100%; display:table;}
+
+nav ul li a {
+    color:white; 
+    font-size:15px; 
+    padding:10px 20px; 
+    display:block; 
+    border-bottom: 2px solid white;}
+
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 2px 2px gray 
+}
+.stay {
+    max-width: 100%;
+}
+ul li {
+    display: inline-block;
+    white-space: 30px;
+}
+h1 {
+    background-color: rgb(118, 69, 69);
+    padding: 20px;
+    margin: 50px;
+    color: black;
+    text-shadow: 2px 2px gray ;
+
+}
+h2 {
+    background-color: rgb(118, 69, 69);
+    color:black;
+    text-shadow: 2px 2px lightblue ;
+}
+
+
+
+* {
+    color:black;
+    border: 0;
+    padding: 10px;
+   }
+
+footer {
+   background-color: rgb(118, 69, 69);
+    padding: 20px;
+    margin: auto;
+}
+li a {
+    color: white;  
+    background-color: black;
+    padding: 3px;
+}
+a {
+    text-decoration: none; 
+    color: white; 
+    background-color: black;
+}
+
+ul {
+    list-style: none; 
+    text-align: center;
+}
+
+ul li {
+    position: relative;
+    display: inline-block; 
+    background: black;
+    padding: 15px 15px; 
+    border-radius: 3px;
+
+}
+
+ul li ul {
+    position: absolute;
+    left: -99999px;  
+    width: 300px;
+    top: 50px;
+    padding: 9;
+    text-align: center;
+}
+
+ul li ul li {
+    display: block; 
+    background: black;
+}
+
+ul li ul li:hover {
+    background:rgb(118, 69, 69);
+    
+}
+h2 {
+    text-align: center;
+}
+p {
+    text-align: center;
+    font-size: 25px;
+}
+.row {
+    display: flex;
+  }
+  
+  .grid1 {
+    flex: 50%;
+  }
+  body {
+    background-color: cornsilk;
+  }
+  form {
+    background-color: lightseagreen;
+  }
+  .imagearray { 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 10px;
+    justify-content: center;
+    }
+  .imagearray img {
+    border: 1px solid lightsteelblue;
+    max-width: 100%;
+  }
